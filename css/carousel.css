@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.carousel-container {
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.carousel-slide {
+    width: 100%;
+    display: none;
+    position: relative;
+    text-align: center;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+/* Stylish carousel controls */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+    outline: none;
+}
+
+.carousel-control.prev {
+    left: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.carousel-control.next {
+    right: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+/* Stylish slide titles */
+.slide-title {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/* Stylish slide paragraphs */
+.slide-paragraph {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #eee;
+}
+
+@media (max-width: 768px) {
+    .carousel-slide {
+        text-align: center;
+    }
+
+    .carousel-control.prev {
+        left: 5px;
+    }
+
+    .carousel-control.next {
+        right: 5px;
+    }
+}

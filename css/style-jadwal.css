@@ -1,0 +1,164 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main{
+    background-color:#0b1b41;
+}
+
+/* CSS untuk merapikan form */
+.container {
+    width:40%;
+    position:relative;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#0b1b41;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: azure;
+    top:30px;
+}
+
+.container-table{
+    width:90%;
+    position:relative;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#0b1b41;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: azure;
+    top:30px;
+}
+
+
+.container-input {
+    width:90%;
+    position:relative;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#0b1b41;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: azure;
+    top:30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="text"],
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color:#4ad295;
+    color:black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #4ad29583;
+    color: white;
+}
+
+/* CSS untuk merapikan tabel */
+table {
+    border-collapse: collapse;
+        width: 100%;
+        max-height: 347px; /* Atur batas maksimum tinggi tabel */
+        overflow-y: scroll; /* Aktifkan scroll vertikal jika tabel melebihi batas */
+        display: block; /* Diperlukan untuk mendukung scroll vertikal */
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+}
+
+
+/* Style untuk gambar di dalam tabel */
+table img {
+    max-width: 50px;
+    max-height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.action{
+    position: absolute;
+    bottom:75px;
+    left:860px;
+}
+
+select{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding:5px;
+}
+
+.search-container{
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+
+input#search-input{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* Warna latar belakang ketika tombol aktif */
+
+#editButton:not([disabled]) {
+    background-color:#4ad295;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Poppins-medium;
+}
+#editButton:not([disabled]):hover {
+    background-color:#4ad29583;
+    transition: 0.3s;
+}
+
+/* Warna latar belakang ketika tombol tidak aktif */
+#editButton[disabled] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background-color: #dfdfdf;
+    font-family: Poppins-regular;
+}

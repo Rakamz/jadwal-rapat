@@ -1,0 +1,37 @@
+.grafik-3d{
+    align-items: center;
+    text-align: center;
+    color: azure;
+    position: absolute;
+    left:15%;
+    top:30px;
+}
+
+.grafik-2d{
+    align-items: center;
+    text-align: center;
+    color: azure;
+    position: absolute;
+}
+
+defs{
+    color: azure;
+}
+
+#piechart_3d rect{
+    color:azure;
+}
+
+g text{
+    fill: rgb(0, 0, 0);
+    background-color: #0b2239;
+}
+
+#grafik1 h2{
+    position: relative;
+    color: azure;
+}
+
+h2{
+    text-align: center;
+}
